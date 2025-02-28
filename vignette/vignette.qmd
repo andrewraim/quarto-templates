@@ -1,10 +1,12 @@
 ---
 title: The 'base' Package
-author: Author Name
+author: Alice Jones, Bob Smith, & Curtis Johnson
+date: now
 thanks: |
-  Document was compiled `{r} format(Sys.time(), "%Y-%m-%d %H:%M:%S %Z")` and
-  corresponds to `base` version `{r} packageVersion("base")`.
-  **Contact**`:` <author.name@email.org>, Mailing Address.
+  | Document was compiled `{r} format(Sys.time(), "%Y-%m-%d %H:%M:%S %Z")` and corresponds to `base` version `{r} packageVersion("base")`.
+  | Alice Jones (<alice.jones@mail1.org>), Mailing Address 1.
+  | Bob Smith (<bob.smith@mail2.org>), Mailing Address 2.
+  | Curtis Johnson (<curtis.johnson@mail3.org>), Mailing Address 3.
 format:
   pdf:
     fontsize: 10pt
@@ -38,6 +40,8 @@ x = rnorm(100)
 hist(x)
 head(x, 20)
 ```
+
+Here's a citation to Latex [@Lamport1986].
 
 Some customizations are:
 

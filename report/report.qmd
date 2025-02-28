@@ -28,7 +28,8 @@ bibliography: ../bib/references.bib
 
 # Introduction
 
-This is example of a report. Here is a citation to R [@Rcore]. Here is a code chunk.
+This is example of a report. Here is a citation to R [@Rcore] and Latex
+[@Lamport1986]. Here is a code chunk.
 
 ```{r}
 x = rnorm(100)
@@ -42,7 +43,7 @@ Some customizations are:
 1. Set the title/header font to serif to match the content.
 1. Set the dimensions.
 1. Add a footnote with the compile time, package version, and contact information.
-1. Set the style of code displays
+1. Set the style of code displays.
 
 # References {-}
 

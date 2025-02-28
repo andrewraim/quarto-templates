@@ -48,7 +48,7 @@ source("setup.R")
 1. Set the title/header font to serif to match the content.
 1. Set the dimensions.
 1. Add a footnote with the compile time, package version, and contact information.
-1. Set the style of code displays
+1. Set the style of code displays.
 
 # Code
 
