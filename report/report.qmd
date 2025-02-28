@@ -1,0 +1,48 @@
+---
+title: Title of Report
+author: Alice Jones$^*$, Bob Smith, & Curtis Johnson
+date: now
+thanks: |
+  | $^*$Corresponding author: Alice Jones (<alice.jones@mail1.org>), Mailing Address 1
+  | Bob Smith (<bob.smith@mail2.org>), Mailing Address 2.
+  | Curtis Johnson (<curtis.johnson@mail3.org>), Mailing Address 3.
+format:
+  pdf:
+    fontsize: 10pt
+    number-sections: true
+    colorlinks: true
+    link-citations: true
+    # toc: true
+    # toccolor: blue
+    include-in-header:
+      text: |
+        \usepackage{report}
+geometry:
+  - left=0.75in
+  - right=0.75in
+  - top=0.75in
+  - bottom=1.00in
+code-block-border-left: "#008CFF"
+bibliography: ../bib/references.bib
+---
+
+# Introduction
+
+This is example of a report. Here is a citation to R [@Rcore]. Here is a code chunk.
+
+```{r}
+x = rnorm(100)
+hist(x)
+head(x, 20)
+```
+
+Some customizations are:
+
+1. Add a bibliography.
+1. Set the title/header font to serif to match the content.
+1. Set the dimensions.
+1. Add a footnote with the compile time, package version, and contact information.
+1. Set the style of code displays
+
+# References {-}
+

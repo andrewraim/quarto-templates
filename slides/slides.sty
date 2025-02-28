@@ -1,0 +1,107 @@
+% Remove asterisk from title for thanks
+%\makeatletter
+%\def\thanks#1{\protected@xdef\@thanks{\@thanks
+%	\protect\footnotetext{#1}}}
+%\makeatother
+
+\useinnertheme{default}
+\usetheme{default}
+
+\let\oldShaded\Shaded
+\let\endoldShaded\endShaded
+\renewenvironment{Shaded}{\tiny\oldShaded}{\endoldShaded}
+
+%% change fontsize of output
+\let\oldverbatim\verbatim
+\let\endoldverbatim\endverbatim
+\renewenvironment{verbatim}{\tiny\oldverbatim}{\endoldverbatim}
+
+%\usepackage{lmodern}
+%\renewcommand*\familydefault{\sfdefault}
+%\usepackage[T1]{fontenc}
+
+% List styles
+\setbeamercolor{item}{fg = black}
+\setbeamertemplate{itemize item}[circle]
+\setbeamertemplate{itemize subitem}[square]
+\setbeamertemplate{itemize subsubitem}[>>]
+\setbeamertemplate{enumerate item}[default]
+
+% Frame title style
+\setbeamertemplate{frametitle}[default][center]
+\setbeamercolor{frametitle}{fg = blue}
+\setbeamerfont{frametitle}{series=\bfseries}
+
+% Style for main title
+\setbeamercolor{title}{fg = blue}
+\setbeamerfont{title}{series=\bfseries, size = \Large}
+
+% Table of contents
+\setbeamercolor{section in toc}{fg = black}
+
+% Colors for the infobar at the bottom
+%\setbeamercolor{palette primary}{fg = black}
+%\setbeamercolor{palette secondary}{fg = black}
+%\setbeamercolor{palette tertiary}{fg = black}
+%\setbeamercolor{palette quaternary}{fg = black}
+%\setbeamercolor{primary tertiary}{fg = black}
+
+% Colors for bib entries
+%\setbeamertemplate{bibliography item}[text]
+%\setbeamercolor{bibliography}{fg = black}
+%\setbeamercolor{bibliography entry}{fg = black}
+
+% Remove newlines from bib entries
+\setbeamertemplate{bibliography entry title}{}
+\setbeamertemplate{bibliography entry location}{}
+\setbeamertemplate{bibliography entry note}{}
+
+% Front matter fields
+\setbeamerfont{author}{series=\bfseries, size = \large}
+\setbeamerfont{institute}{size = \normalsize}
+
+% Take away *most* of the indentation from the "description" list environment
+\setbeamersize{description width=0mm}
+
+% Blocks
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\setbeamercolor{block title}{fg=white, bg=blue!50}
+\setbeamercolor{block body}{fg=black, bg=blue!5}
+
+% Uncomment these to widen the margins
+\setbeamersize{text margin left=5mm}
+%\setbeamersize{text margin right=5mm}
+
+% -----------------------------------------------------------------------------
+% The following footline was adapated from Rouben Rostamian's code. (TBD: was
+% it from a particular template?). The default contents of footline are:
+%
+% 1. author (institute),
+% 2. title of slides,
+% 3. section, or section::subsection if a subsection is set,
+% 4. page/pagetotal.
+%
+% The user can override the default \my@footline by \setfootline{whatever}
+% \renewcommand{\setfootline}[1]{\renewcommand{\my@footline}{#1}}
+\newcommand{\my@footline}{%
+  \insertshortauthor \, (\insertshortinstitute)
+  \hfill
+  \insertshorttitle
+  \hfill
+  \insertsectionhead
+  \ifx\insertsubsectionhead\@empty\else::\insertsubsectionhead\fi
+  \hfill
+  \insertframenumber/\inserttotalframenumber}
+
+\setbeamertemplate{footline}{%
+  \usebeamerfont{structure}
+  \begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex]{palette secondary}%
+    \Tiny\hspace*{4mm}\my@footline\hspace{4mm}
+  \end{beamercolorbox}}
+
+\newcommand\numbered{\setbeamertemplate{footline}{%
+  \raisebox{5pt}{\makebox[\paperwidth]{%
+  \hfill\makebox[10pt]{%
+  \scriptsize\insertframenumber}}}}}
+
+\newcommand\unnumbered{\setbeamertemplate{footline}{}\addtocounter{framenumber}{-1}}

@@ -1,0 +1,11 @@
+% Change the sans serif font in title and headers to be the serif font. It
+% avoids assumptions about which fonts are installed (which might affect
+% portability).
+\renewcommand{\sfdefault}{\rmdefault}
+
+% Remove asterisk from title for thanks
+\makeatletter
+\def\thanks#1{\protected@xdef\@thanks{\@thanks
+	\protect\footnotetext{#1}}}
+\makeatother
+
