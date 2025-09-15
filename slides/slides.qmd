@@ -8,6 +8,7 @@ thanks: |
   **Curtis Johnson** (University of B).
 format:
   beamer:
+    mathspec: true
     colorlinks: true
     link-citations: true
     section-titles: false
@@ -15,6 +16,7 @@ format:
     include-in-header:
       text: |
         \usepackage{slides}
+pdf-engine: pdflatex
 code-block-border-left: "#008CFF"
 bibliography: ../bib/references.bib
 echo: true
@@ -49,6 +51,7 @@ source("setup.R")
 1. Set the dimensions.
 1. Add a footnote with the compile time, package version, and contact information.
 1. Set the style of code displays.
+1. Redefine Latex `\vec{...}` to make symbols bold.
 
 # Code
 
@@ -60,6 +63,8 @@ Here is a code chunk.
 x = rnorm(100)
 head(x, 50)
 ```
+
+Now $\vec{x} = (x_1, \ldots, x_n)$ is a vector.
 
 ## A Plot
 

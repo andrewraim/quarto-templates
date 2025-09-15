@@ -3,7 +3,11 @@
 % portability).
 \renewcommand{\sfdefault}{\rmdefault}
 
-% Remove asterisk from title for thanks
+% Make vectors render as bold symbols rather than symbols with arrows above
+% them. This seems to require the option `mathspec: true` in the Quarto YAML.
+\renewcommand{\vec}{\boldsymbol}
+
+% Remove asterisk from title for `thanks`.
 \makeatletter
 \def\thanks#1{\protected@xdef\@thanks{\@thanks
 	\protect\footnotetext{#1}}}

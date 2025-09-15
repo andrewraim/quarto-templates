@@ -8,6 +8,7 @@ thanks: |
   | Curtis Johnson (<curtis.johnson@mail3.org>), Mailing Address 3.
 format:
   pdf:
+    mathspec: true
     fontsize: 10pt
     number-sections: true
     colorlinks: true
@@ -17,6 +18,7 @@ format:
     include-in-header:
       text: |
         \usepackage{report}
+pdf-engine: pdflatex
 geometry:
   - left=0.75in
   - right=0.75in
@@ -37,6 +39,8 @@ hist(x)
 head(x, 20)
 ```
 
+Now $\vec{x} = (x_1, \ldots, x_n)$ is a vector.
+
 Some customizations are:
 
 1. Add a bibliography.
@@ -44,6 +48,7 @@ Some customizations are:
 1. Set the dimensions.
 1. Add a footnote with the compile time, package version, and contact information.
 1. Set the style of code displays.
+1. Redefine Latex `\vec{...}` to make symbols bold.
 
 # References {-}
 
