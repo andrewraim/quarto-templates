@@ -33,6 +33,17 @@ code-block-border-left: "#008CFF"
 bibliography: ../bib/references.bib
 ---
 
+```{r}
+#| echo: false
+# This prints the name of a function with its arguments
+print_function = function(x) {
+	desc = capture.output( str(x, give.attr = F) )
+	out = sub(pattern = "function ", replacement = substitute(x), x = desc,
+		fixed = TRUE)
+	cat(paste(out, collapse = "\n"))
+}
+```
+
 # Introduction
 
 This is example of a package vignette for the `base` package in R [@Rcore].
