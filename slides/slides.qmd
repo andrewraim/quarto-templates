@@ -18,7 +18,7 @@ format:
         \usepackage{slides}
 pdf-engine: pdflatex
 code-block-border-left: "#008CFF"
-bibliography: ../bib/references.bib
+bibliography: references.bib
 echo: true
 ---
 

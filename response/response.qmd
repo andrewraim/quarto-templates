@@ -1,0 +1,100 @@
+---
+title: '[Title of Article]'
+subtitle: 'Manuscript [Manuscript ID]: Response to Reviewer Feedback'
+date: now
+format:
+  pdf:
+    mathspec: true
+    fontsize: 12pt
+    number-sections: true
+    colorlinks: true
+    link-citations: true
+    toc: true
+    toccolor: blue
+    include-in-header:
+      text: |
+        \usepackage{response}
+pdf-engine: pdflatex
+geometry:
+  - left=0.75in
+  - right=0.75in
+  - top=0.75in
+  - bottom=1.00in
+code-block-border-left: "#008CFF"
+callout-appearance: simple
+callout-icon: false
+bibliography: references.bib
+---
+
+# Instructions for Coauthors {.unnumbered #intro}
+
+::: {.callout-warning}
+This section will be commented out when the response is submitted.
+:::
+
+The referee reports are below, along with the associate editor report and cover letter. 
+
+You can use Markdown and Latex notation as usual. To render it, open the document in Rstudio and click the `Render` button. Or run `quarto render` from the command line.
+
+To leave an internal message for us, that is not intended to be included in the response, please write it as a `note` callout box, as follows.
+
+```{.md}
+::: {.callout-note}
+# AR 2026-01-06
+Here is a note for the authors as we formulate a the reponse to the review.
+:::
+```
+
+The code `# AR 2026-01-06` includes author initials and a date; it is helpful to log this information over time  to help keep track of decisions made during a revision.
+
+To write content to be included in the response, please write it as an `important` callout box, as follows.
+
+```{.md}
+::: {.callout-important}
+Here is a response to the review.
+:::
+```
+
+Our callout boxes are rendered as follows.
+
+::: {.callout-note}
+# AR 2026-01-06
+Here is a note for the authors as we formulate a the response to the review.
+:::
+
+::: {.callout-important}
+Here is a response to the review.
+:::
+
+Before submitting this document, we will comment out the "Instructions for Coauthors" and  "Cover Letter" sections by wrapping them in a Markdown fence as follows.
+
+```{.md}
+::: {.content-hidden}
+	... content goes here ...
+:::
+```
+
+We will also change all callout boxes with `.callout-note` to `.content-hiddent`.
+
+# Cover Letter {#sec-cover}
+
+::: {.callout-warning}
+This section will be commented out when the response is submitted.
+:::
+
+(Insert the cover letter here, for reference.)
+
+# Associate Editor
+
+(Insert the feedback from the Associate Editor).
+
+# Referee \#1
+
+(Insert the feedback from the Referee \#1).
+
+# Referee \#2
+
+(Insert the feedback from the Referee \#2).
+
+# References {-}
+

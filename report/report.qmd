@@ -25,7 +25,7 @@ geometry:
   - top=0.75in
   - bottom=1.00in
 code-block-border-left: "#008CFF"
-bibliography: ../bib/references.bib
+bibliography: references.bib
 ---
 
 # Introduction

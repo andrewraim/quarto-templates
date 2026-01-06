@@ -30,7 +30,7 @@ vignette: >
   %\VignetteEncoding{UTF-8}
   %\VignetteEngine{quarto::pdf}
 code-block-border-left: "#008CFF"
-bibliography: ../bib/references.bib
+bibliography: references.bib
 ---
 
 ```{r}
