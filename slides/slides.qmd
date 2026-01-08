@@ -15,7 +15,7 @@ format:
     linkcolor: blue
     include-in-header:
       text: |
-        \usepackage{slides}
+        \usepackage{common}
 pdf-engine: pdflatex
 code-block-border-left: "#008CFF"
 bibliography: references.bib

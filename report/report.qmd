@@ -2,10 +2,10 @@
 title: Title of Report
 author: Alice Jones$^*$, Bob Smith, & Curtis Johnson
 date: now
-thanks: |
-  | $^*$Corresponding author: Alice Jones (<alice.jones@mail1.org>), Mailing Address 1
-  | Bob Smith (<bob.smith@mail2.org>), Mailing Address 2.
-  | Curtis Johnson (<curtis.johnson@mail3.org>), Mailing Address 3.
+thanks: >
+  $^*$Corresponding author: Alice Jones (<alice.jones@mail1.org>), Mailing Address 1.
+  Bob Smith (<bob.smith@mail2.org>), Mailing Address 2.
+  Curtis Johnson (<curtis.johnson@mail3.org>), Mailing Address 3.
 format:
   pdf:
     mathspec: true
@@ -17,7 +17,7 @@ format:
     # toccolor: blue
     include-in-header:
       text: |
-        \usepackage{report}
+        \usepackage{common}
 pdf-engine: pdflatex
 geometry:
   - left=0.75in

@@ -1,0 +1,59 @@
+---
+title: '[Title of Article]'
+subtitle: 'Review of [Manuscript ID] for [Journal]'
+format:
+  pdf:
+    mathspec: true
+    fontsize: 12pt
+    number-sections: true
+    colorlinks: true
+    link-citations: true
+    include-in-header:
+      text: |
+        \usepackage{common}
+pdf-engine: pdflatex
+geometry:
+  - left=0.75in
+  - right=0.75in
+  - top=0.75in
+  - bottom=1.00in
+code-block-border-left: "#008CFF"
+callout-appearance: simple
+callout-icon: false
+bibliography: references.bib
+appendix-style: plain
+numberprefix: "A"
+---
+
+Overall feedback goes here. Here are sample citations to @Lamport1986 and
+@Rcore.
+
+\setcounter{section}{0}
+\renewcommand{\thesection}{\Alph{section}}
+
+# Major Points {.appendix}
+
+1. First major point
+1. Second major point
+1. Third major point
+
+# Minor Points {.appendix}
+
+1. First minor point
+1. Second minor point
+1. Third minor point
+
+# Grammar and Typos {.appendix}
+
+1. First grammar or typo
+2. Second grammar or typo
+1. Third grammar or typo
+
+# Optional Points {.appendix}
+
+1. First optional point
+2. Second optional point
+1. Third optional point
+
+# References {-}
+

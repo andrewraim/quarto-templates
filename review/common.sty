@@ -1,0 +1,15 @@
+% Change the sans serif font in title and headers to be the serif font. It
+% avoids assumptions about which fonts are installed (which might affect
+% portability).
+\renewcommand{\sfdefault}{\rmdefault}
+
+% Make vectors render as bold symbols rather than symbols with arrows above
+% them. This seems to require the option `mathspec: true` in the Quarto YAML.
+\renewcommand{\vec}{\boldsymbol}
+
+% Remove asterisk from title for `thanks`.
+\makeatletter
+\def\thanks#1{\protected@xdef\@thanks{\@thanks
+	\protect\footnotetext{#1}}}
+\makeatother
+

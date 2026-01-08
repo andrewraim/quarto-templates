@@ -1,7 +1,6 @@
 ---
 title: '[Title of Article]'
-subtitle: 'Manuscript [Manuscript ID]: Response to Reviewer Feedback'
-date: now
+subtitle: 'Response to Reviewer Feedback for [Manuscript ID]'
 format:
   pdf:
     mathspec: true
@@ -13,7 +12,7 @@ format:
     toccolor: blue
     include-in-header:
       text: |
-        \usepackage{response}
+        \usepackage{common}
 pdf-engine: pdflatex
 geometry:
   - left=0.75in
