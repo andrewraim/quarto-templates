@@ -1,6 +1,6 @@
 ---
-title: '[Title of Article]'
-subtitle: 'Response to Reviewer Feedback for [Manuscript ID]'
+title: 'Response to Reviewer Feedback for [Manuscript ID]'
+subtitle: '[Title of Article]'
 format:
   pdf:
     mathspec: true

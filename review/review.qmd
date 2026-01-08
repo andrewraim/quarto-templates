@@ -1,6 +1,6 @@
 ---
-title: '[Title of Article]'
-subtitle: 'Review of [Manuscript ID] for [Journal]'
+title: 'Review of [Manuscript ID] for [Journal]'
+subtitle: '[Title of Article]'
 format:
   pdf:
     mathspec: true

@@ -1,5 +1,5 @@
 ---
-title: Title of Presentation
+title: '[Title of Presentation]'
 author: Alice Jones
 institute: Center for Statistics, Agency A
 date: now
