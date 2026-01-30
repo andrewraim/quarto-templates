@@ -1,12 +1,12 @@
 format:
   pdf:
     mathspec: true
-    fontsize: 10pt
+    fontsize: 12pt
     number-sections: true
     colorlinks: true
     link-citations: true
-    # toc: true
-    # toccolor: blue
+    toc: true
+    toccolor: blue
     include-in-header:
       text: |
         \usepackage{common}
@@ -17,4 +17,5 @@ geometry:
   - top=1.00in
   - bottom=1.25in
 code-block-border-left: "#008CFF"
-
+callout-appearance: simple
+callout-icon: false

@@ -8,8 +8,19 @@ thanks: |
   | Alice Jones (<alice.jones@mail1.org>), Mailing Address 1.
   | Bob Smith (<bob.smith@mail2.org>), Mailing Address 2.
   | Curtis Johnson (<curtis.johnson@mail3.org>), Mailing Address 3.
-bibliography: ../bib/references.bib
+bibliography: references.bib
 ---
+
+```{r}
+#| echo: false
+# This prints the name of a function with its arguments
+print_function = function(x) {
+	desc = capture.output( str(x, give.attr = F) )
+	out = sub(pattern = "function ", replacement = substitute(x), x = desc,
+		fixed = TRUE)
+	cat(paste(out, collapse = "\n"))
+}
+```
 
 # Introduction
 
