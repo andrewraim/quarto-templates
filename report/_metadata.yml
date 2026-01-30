@@ -1,0 +1,20 @@
+format:
+  pdf:
+    mathspec: true
+    fontsize: 10pt
+    number-sections: true
+    colorlinks: true
+    link-citations: true
+    # toc: true
+    # toccolor: blue
+    include-in-header:
+      text: |
+        \usepackage{common}
+pdf-engine: pdflatex
+geometry:
+  - left=0.75in
+  - right=0.75in
+  - top=0.75in
+  - bottom=1.00in
+code-block-border-left: "#008CFF"
+

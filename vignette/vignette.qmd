@@ -3,33 +3,11 @@ title: The 'base' Package
 author: Alice Jones, Bob Smith, & Curtis Johnson
 date: now
 thanks: |
-  | Document was compiled `{r} format(Sys.time(), "%Y-%m-%d %H:%M:%S %Z")` and corresponds to `base` version `{r} packageVersion("base")`.
+  | Document was compiled `{r} format(Sys.time(), "%Y-%m-%d %H:%M:%S %Z")`
+    and corresponds to `base` version `{r} packageVersion("base")`.
   | Alice Jones (<alice.jones@mail1.org>), Mailing Address 1.
   | Bob Smith (<bob.smith@mail2.org>), Mailing Address 2.
   | Curtis Johnson (<curtis.johnson@mail3.org>), Mailing Address 3.
-format:
-  pdf:
-    mathspec: true
-    fontsize: 10pt
-    number-sections: true
-    colorlinks: true
-    link-citations: true
-    # toc: true
-    # toccolor: blue
-    include-in-header:
-      text: |
-        \usepackage{vignette}
-pdf-engine: pdflatex
-geometry:
-  - left=0.75in
-  - right=0.75in
-  - top=0.75in
-  - bottom=1.00in
-vignette: >
-  %\VignetteIndexEntry{The 'base' Package}
-  %\VignetteEncoding{UTF-8}
-  %\VignetteEngine{quarto::pdf}
-code-block-border-left: "#008CFF"
 bibliography: ../bib/references.bib
 ---
 

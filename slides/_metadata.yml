@@ -1,0 +1,16 @@
+format:
+  beamer:
+    fontsize: 9pt
+    mainfont: "Times New Roman"
+    mathspec: true
+    colorlinks: true
+    link-citations: true
+    section-titles: false
+    linkcolor: blue
+    include-in-header:
+      text: |
+        \usepackage{common}
+pdf-engine: pdflatex
+code-block-border-left: "#008CFF"
+echo: true
+

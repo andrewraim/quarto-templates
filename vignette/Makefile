@@ -5,4 +5,4 @@ main:
 
 clean:
 	rm -f $(SRC).pdf
-
+	rm -rf $(SRC)_files

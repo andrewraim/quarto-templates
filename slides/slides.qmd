@@ -6,20 +6,7 @@ date: now
 thanks: |
   Joint work with **Bob Smith** (University of A) and
   **Curtis Johnson** (University of B).
-format:
-  beamer:
-    mathspec: true
-    colorlinks: true
-    link-citations: true
-    section-titles: false
-    linkcolor: blue
-    include-in-header:
-      text: |
-        \usepackage{slides}
-pdf-engine: pdflatex
-code-block-border-left: "#008CFF"
 bibliography: ../bib/references.bib
-echo: true
 ---
 
 ```{r}
